@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+    body {
+      background: linear-gradient(to bottom right, #fdf6e4, #d9b99b);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #4a3c31;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background-color: #f8e2cc;
+      border-radius: 15px;
+      margin: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 3rem;
+      color: #4a3c31;
+      margin: 0;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 4px solid #4a3c31;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #4a3c31;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      color: #4a3c31;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: #45a049;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: #4a3c31;
+      margin: 20px auto;
+      width: 90%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Feedback</h1>
+  </header>
+
+  <main>
+    <form action="http://www.myserver.com/myscript.cgi" method="post" enctype="multipart/form-data">
+      
+      <h3>Give Your Feedback</h3>
+
+      <h5>Name</h5>
+      <input type="text" name="name" required>
+
+      <p>Check the following you found interesting:</p>
+      <p><input name="pictype" type="radio" value="Outputs" required> Outputs</p>
+      <p><input name="pictype" type="radio" value="About Me" required> About Me</p> 
+      <p><input name="pictype" type="radio" value="Reflection" required> Reflection</p>
+
+      <h3>Picture</h3>
+      <p>Please upload the images you found interesting:</p> 
+      <input type="file" name="image" accept="image/*" required>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+
+    </form>
+  </main>
+
+</body>
+</html>

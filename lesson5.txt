@@ -1,0 +1,6 @@
+<html>
+</h1><b><i>HYPERLINK</i></b>
+<body>
+<a href="www.yahoo.com">Yahoo!</a>
+</body>
+</html>

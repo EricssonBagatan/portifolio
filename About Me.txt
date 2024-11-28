@@ -1,0 +1,20 @@
+<html>
+<head><title> About Me </title> </head>
+<h1 align="center"> About Me! </h1>
+<body bgcolor="Beige">
+<hr width="100%">
+<hr width="100%">
+           <p align="left" font-family:Georgia; size:32px:>
+My name is Ericsson O. Bagatan, one of the things I love doing is playing badminton with either my father or my sister.<br>
+Badminton makes me feel relaxed as when playing it, I forget all the stress I had in school or maybe even schoolworks.<br>
+I'm also the youngest in my family! I have 2 sisters, my sister, Ate Star actually studies here at LPSci too!<br>
+I also have a dog named Chaplin, he is very stubborn, but I still love him dearly.
+            </p>
+<p align="center">
+  <img src="Badminton.jfif">
+             <hr width="100%">
+<hr width="100%">
+
+</body>
+</html>
+

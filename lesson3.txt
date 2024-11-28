@@ -1,0 +1,21 @@
+<html>
+<head><title>Tables</title></head>
+<body>
+<table align=“center” border=“3” bordercolor=“violet” width=“600” cellpadding=“4” cellspacing=“6”>
+<h1 align=“center”>Directory</h1>
+<tr height=“35” bgcolor=“yellow” align=“center”> <td><b>Name</b></td>
+<td><b>Mobile</b></td> <td><b>Landline</b></td>
+</tr>
+
+<tr>
+<td>Conrado C. Callada Jr.</td> <td>+63917123456</td> <td>+6322412311</td>
+</tr>
+<tr>
+<td>Samantha G. Bueno</td> <td>+639188901234</td> <td>+6322411312</td>
+</tr>
+
+<tr>
+<td>Gabriel M. Cortez</td> <td>+639195678901</td> <td>+6322110218</td> </tr>
+</table>
+</body>
+</html>

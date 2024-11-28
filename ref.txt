@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2nd Quarter Reflection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styling */
+    body {
+      background: linear-gradient(to bottom right, #fdf6e4, #d9b99b);
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #4a3c31;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px;
+      background-color: #f8e2cc;
+      border-radius: 15px;
+      margin: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-family: 'Lora', serif;
+      font-size: 3rem;
+      color: #4a3c31;
+      margin: 0;
+    }
+
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #fdf6e4;
+      border-radius: 15px;
+      border: 4px solid #4a3c31;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      text-align: center;
+      color: #4a3c31;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    .activity {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      margin-bottom: 20px;
+    }
+
+    .activity:hover {
+      background-color: #f1e0c6;
+      transform: scale(1.05);
+    }
+
+    .activity p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .activity img {
+      width: 80%;
+      max-width: 500px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      display: none;
+      margin-top: 20px;
+    }
+
+    .expand {
+      display: block;
+    }
+
+    hr {
+      border: 0;
+      height: 2px;
+      background: #4a3c31;
+      margin: 20px auto;
+      width: 90%;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>2nd Quarter Activities Reflection</h1>
+</header>
+
+<main>
+  <section class="activity" onclick="toggleContent(this)">
+    <h3>Booklandia</h3>
+    <p>Click to learn more about how we organized Booklandia.</p>
+    <div class="content">
+      <p>
+        Booklandia was a creative project that allowed us to explore storytelling and the importance of books. Through collaboration, we created a fun and interactive book-themed environment.
+      </p>
+      <img src="booklandia.jpg" alt="Booklandia">
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="activity" onclick="toggleContent(this)">
+    <h3>Historical Icon</h3>
+    <p>Click to expand and read more about the Historical Icon project.</p>
+    <div class="content">
+      <p>
+        The Historical Icon project challenged us to research historical figures and represent them in a creative and educational manner. It was an engaging way to learn about history.
+      </p>
+      <img src="historical-icon.jpg" alt="Historical Icon">
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="activity" onclick="toggleContent(this)">
+    <h3>Cleanest Classroom</h3>
+    <p>Click to expand and see how we worked on the Cleanest Classroom challenge.</p>
+    <div class="content">
+      <p>
+        The Cleanest Classroom competition encouraged teamwork and cleanliness. It was a fun and challenging activity that helped us create a positive and tidy learning environment.
+      </p>
+      <img src="cleanest-classroom.jpg" alt="Cleanest Classroom">
+    </div>
+  </section>
+</main>
+
+<script>
+  // Function to toggle content visibility when the section is clicked
+  function toggleContent(section) {
+    const content = section.querySelector('.content');
+    const allContents = document.querySelectorAll('.content');
+
+    // Hide all other content sections
+    allContents.forEach(c => {
+      if (c !== content) {
+        c.style.display = 'none';
+      }
+    });
+
+    // Toggle the clicked section
+    if (content.style.display === 'none' || content.style.display === '') {
+      content.style.display = 'block';
+    } else {
+      content.style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>

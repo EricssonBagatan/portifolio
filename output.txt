@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepads and Browser</title>
+    <style>
+        /* Body Styling */
+        body {
+            background-color: #d9b99b; /* Warm beige */
+            font-family: 'Georgia', serif; /* Elegant font */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            color: #5a3e2b; /* Rich dark brown */
+            text-decoration: underline;
+            font-weight: bold;
+            padding: 15px;
+            border: 5px solid #5a3e2b; /* Border around header */
+            background-color: #f5e0c3; /* Softer background for contrast */
+            margin: 20px auto;
+            width: 80%; /* Center and control width */
+            border-radius: 15px; /* Smooth corners */
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff8f0;
+            border: 5px solid #8c5b3c; /* Thick outer border */
+            border-radius: 20px; /* Smooth edges */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Depth effect */
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: #f8ebe3; /* Subtle background */
+            border: 3px solid #5a3e2b; /* Strong border */
+            border-radius: 10px; /* Smooth edges for the table */
+            overflow: hidden; /* Prevent border overflow */
+        }
+
+        td {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #5a3e2b;
+            text-align: center;
+            padding: 15px;
+            border: 2px solid #8c5b3c; /* Inner cell borders */
+        }
+
+        /* Images Styling */
+        .images {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px; /* Larger gap between images */
+            margin-top: 20px;
+        }
+
+        .images img {
+            width: 30%; /* Each image takes up one-third of the row */
+            height: auto; /* Maintain aspect ratio */
+            border: 5px solid #8c5b3c; /* Image border */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Depth effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+        }
+
+        .images img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+        }
+
+        /* Footer (Optional) */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #5a3e2b;
+            color: #fff;
+            font-size: 1em;
+            border-top: 3px solid #8c5b3c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Heading -->
+    <h1>Notepads and Browser for 2nd Quarter</h1>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <table>
+            <tr>
+                <td>Applications of Lesson 3-7</td>
+            </tr>
+        </table>
+
+        <!-- Images Section -->
+        <div class="images">
+            <img src="sp1.jpg" alt="Image 1">
+            <img src="sp2.jpg" alt="Image 2">
+            <img src="sp3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <!-- Footer (Optional for branding or notes) -->
+    <footer>
+        -I applied all the codes from each lesson to create the output
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<html>
+<h1 align="center"><b><u> LESSONS </u></b></h1>
+<p align="center">
+LESSON 1: XHTML
+eXtensible HyperText Markup Language. 
+The ”x” came from XML or eXtensible Mark-up Language.
+Though different from HTML, XHTML also uses the filename extension .html
+The content of the actual coding might change because of XHTML conventions but it still holds the same filename extension.
+stricter and cleaner version of HTML
+Aimed to replace HTML
+All new Web browsers support XHTML
+
+LESSON 2: HTML LISTS
+used to specify lists of information. All lists may contain one or more list elements. 3 types of HTML lists:
+Ordered List or Numbered List (ol)
+-Data can be presented in enumerated format or list.
+-This is the type of list where each item is numbered usually starting at 1 (but can be changed using the start attribute
+
+Unordered List or Bulleted List (ul)
+-Enumerates each item as bulleted and uses container tag <ul></ul>.
+Different types of bullet:
+-disc for round bullets
+-circle for circular bullets
+-square for square bullets
+
+Description List or Definition List/Glossary List (dl)
+-The definition list uses the tags <dt></dt> for the item itself and <dd></dd> for the definition of the item.
+
+LESSON 3: HTML TABLES
+TABLES:
+allow you to organize and arrange data into columns and rows.
+allows you to divide your page into sections where you can place headers, footers and navigation links. 
+made up of rows and columns
+by default has no borders, so you need to have a value of at least 1 for the border attribute.
+
+LESSON 4: HTML TABLES 2
+MERGING CELLS HORIZONTALLY:
+Cells in the same row can be merged using the colspan attribute of <td></td> and <th></th>
+
+MERGING CELLS VERTICALLY:
+Cells in the adjacent row can also be merged using the rowspan attribute of <td></td> and <th></th>
+
+Merging Cells Horizontally and Vertically:
+Merged cells on the same row can also be merged with cells on the adjacent rows by combining the rowspan and colspan attributes
+
+NESTING TABLES:
+Just like lists, tables can be nested. Web page developers use this technique to enhance even more the layout and structure.
+
+Adding an Image to a Table: 
+You can add image to a cell by using the tag pair <td><img src=“…”>
+
+LESSON 5: HYPERLINKS
+A reference link that allows you to navigate to another page of the same document or to another document.
+
+THREE TYPES OF HYPERLINKS:
+Absolute URL – links to a page on a different Web server
+Relative URL – links to a page on the same Web server 
+Named Anchor – links to a different location on the same Web page
+
+LESSON 6: HTML FORMS
+FORM:
+Allows you to gather feedback to provide better service
+Purposely designed for gathering information on the Internet. These HTML documents are sent back to the server once the user submits them.
+The areas on the form are called fields, text fields or text boxes
+FORM ATTRIBUTES:
+Action attribute
+responsible for indicating where the information will be passed whether it is to another Web page or to a script.
+Value = URL
+Method attribute
+responsible for indicating the way for sending the information
+Get: retrieving data
+Post: update or stores data
+
+FORM CONTENT:
+Should be both visually appealing and functional
+Use the container tag “<form></form>” 
+Start organizing the form by placing the input empty tag inside the <form> set of tags and have its attribute type specify the kind of input you are going to have.
+Another attribute name, distinguishes one input field to another.
+
+INPUT ELEMENT:
+used for making text boxes, password boxes, check boxes, radio buttons, submit buttons and reset buttons depending on the value of the type attribute.
+
+LESSON 7: HTML FORMS 2
+TEXTBOX:
+Textboxes are single line text input boxes.
+Textboxes are used for username input and other single line texts.
+Can be made by keying in text as the value of the type attribute of the <input>.
+You can use the value attribute to set an initial text input.
+The size attribute then indicates the length of the textbox.
+
+LARGE TEXT AREA:
+You can create an input field that can span several rows and columns
+Text areas are made via the container tag <textarea></textarea>.
+The content of this tag will be displayed in the text area by default.
+Example: <textarea name=“spiderman”> Do you like spiderman?</textarea>
+
+WRAPPING:
+Soft word wrapping – wraps the text only in the text area and not when it is submitted.
+Hard word wrapping - wraps the text only in the text area and also when it is submitted
+Word wrapping can be removed by keying in off as the value for the wrap attribute.
+
+RADIO BUTTONS:
+Provide the users a variety of choices where only one can be selected.
+Can be made by keying in radio as the value of the type attribute of <input>
+Example: <input type=“radio” name=“gender”>
+In a set of radio buttons, only one can be chosen
+Radio buttons of the same group have similar value for their name attributes
+The checked attribute is applicable for radio buttons to indicate a default selected option.
+Usually used when the choices are few.
+
+LESSON 8: HTML FORMS 3
+CHECK BOXES:
+offer users a variety of choices where none, only one or many may be selected.
+Can be made by keying in checkbox as the value of the type attribute of <input>
+<input type=“checkbox” name=“fav_sanrio”>
+
+DROP-DOWN MENUS:
+Offer users a variety of choices where only one can be selected
+Made via the container tag <select></select>.
+Individual items in drop-down menus are defined by
+the container tag <option></option>
+
+EMAIL FEEDBACK FORM
+Allows communication with your website’s visitors. Visitors can submit questions and comments which will then be forwarded to your email address.
+<form action=“mailto:mitzz.koga0309@mailadd” method=“get” enctype=“text/plain”>
+
+SUBMIT BUTTON
+Usually placed at the end of forms and when clicked, submits the information input.
+It can be made by keying in submit as the value of the type attribute of <input>
+
+RESET BUTTON
+Usually placed at the end of a form.
+When it is clicked, it clears all the input information.
+This can be done by keying in reset as the value of the type attribute of <input>
+
+ADDING A FILE
+Allows your website visitor to send files to your web server.
+File can be made by keying file as the value of the type attribute of <input> while the accept attribute specifies the types of files that the server accepts (that can be submitted through a file upload)
+<input type=“file” name=“image” accept=“file_extension”>
+
+</body>
+</html>
